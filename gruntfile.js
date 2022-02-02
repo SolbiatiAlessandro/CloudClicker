@@ -16,16 +16,19 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-      files: [ 'src/**/*.js' ],
-      tasks: ['browserify'],
       options: {
-          spawn: false,
+		  livereload: true,
         },
+		browserify: {
+		  files: [ 'src/**/*.js' ],
+		  tasks: ['browserify'],
+		}
     },
     connect: {
       target:{
             options: {
-                port: 9001
+                port: 9001,
+				livereload: true,
             }
         }
     },

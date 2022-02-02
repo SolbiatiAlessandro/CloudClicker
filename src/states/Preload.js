@@ -22,6 +22,8 @@ export default class Preload {
 
     //do all your loading here
     //this.load.image('player', 'assets/images/player.png'); //width and height of sprite
+	this.load.image('cloud', 'assets/images/cloud.png');
+	this.load.image('game_bg', 'assets/images/game_bg_2.png');
 
 
     //staaaart load
